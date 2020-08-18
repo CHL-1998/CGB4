@@ -12,6 +12,7 @@
         <module>jt-common</module>
         <module>jt-manager</module>
         <module>jt-web</module>
+        <module>jt-sso</module>
     </modules>
     <!-- pom负责表示我是一个聚合的工程，在内部可以添加很多项目，形成父子级关系 -->
     <packaging>pom</packaging>

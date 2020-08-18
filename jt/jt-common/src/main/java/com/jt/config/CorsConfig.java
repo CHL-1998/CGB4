@@ -18,10 +18,10 @@ public class CorsConfig implements WebMvcConfigurer {
         //允许什么样的请求进行跨域访问
         // /*只允许一级目录请求  /**表示多级目录请求
         registry.addMapping("/**")
-                .allowedOrigins("http://www.jt.com")
+                .allowedOrigins("*")
                 //是否允许携带cookie
                 .allowCredentials(true)
                 // 定义探针检测时间
-                .maxAge(30);
+                .maxAge(1800);
     }
 }
