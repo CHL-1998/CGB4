@@ -1,0 +1,6 @@
+# Project exclude paths
+/jt/jt-common/target/
+/jt/jt-manager/target/
+/jt/jt-web/target/
+/springboot_demo_2/target/
+/springboot_demo_3/target/
