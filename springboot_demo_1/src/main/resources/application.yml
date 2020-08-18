@@ -1,0 +1,46 @@
+# 设置环境的默认值
+spring:
+  profiles:
+#    active:
+---
+# yml配置文件语法
+# 1、key：value结构
+# 2、yml配置文件有层级关系
+# 3、yml配置文件注意缩进
+# 4、yml文件支持中文，内部编码默认为utf-8
+# yml配置文件是springboot中的核心文件，在其中添加了整合环境的重要配置，如果有需要为业务数据属性赋值，最好还是提供一个properties配置文件`1
+server:
+  port: 8080
+  #设定项目发布路径
+  servlet:
+    context-path: / # /代表缺省值目录
+
+
+# 在配置文件中添加属性和属性值,为了防止重名的发生，添加前缀区分
+#jdbc:
+#  username: root用户名
+#  password: root密码
+
+# active属性定义默认启动环境
+spring:
+  profiles:
+    active: prod
+# 实现配置文件的分隔
+---
+spring:  # 为环境定义名称
+  profiles: test
+
+
+server:
+  port: 8080
+  #设定项目发布路径
+  servlet:
+    context-path: / # /代表缺省值目录
+
+
+# 在配置文件中添加属性和属性值,为了防止重名的发生，添加前缀区分
+#jdbc:
+#  username: com.tedu.cn用户名
+#  password: tarena密码
+
+
